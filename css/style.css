@@ -43,6 +43,10 @@ margin-bottom: -4rem;
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #1ebba3;
 }
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
 /* slideer */
 .carousel-item{
 
@@ -158,8 +162,8 @@ h3 .heading{
 }
 .card{
 	margin: 2rem;
-	height: 400px;
-	width: 400px;
+	height: 360px;
+	width: 300px;
 }
 
 
@@ -219,13 +223,26 @@ hr.socket{
 
 	}
 }
-@media(max-width:970px){
-	#contact{
-		width: 100%;
-		box-sizing: border-box;
+@media(max-width:1460px){
+	.carousel-caption a{
+		position: relative;
+		top: 0;
+		bottom: 20px;
+	}
+}
+@media (max-width:1325px){
+	.carousel-caption h1{
+		font-size: 3rem
 	}
 }
 @media(max-width:767px){
+	.carousel-item a{
+		margin-bottom: 40px;
+	}
+	.carousel-caption h1{
+		font-size: 2rem;
+		margin-top: 0;
+	}
 	#team .card{
 		margin: 0 auto;
 		margin-bottom: 10px;
@@ -238,5 +255,14 @@ hr.socket{
 	}
 	footer{
 		box-sizing: border-box;
+	}
+}
+@media (max-width:575px){
+	.carousel-caption h1{
+		font-size: 2rem;
+
+	}
+	.carousel-caption h3{
+		font-size: 1.3rem;
 	}
 }
