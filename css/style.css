@@ -235,6 +235,13 @@ hr.socket{
 		font-size: 3rem
 	}
 }
+@media(max-width:992px){
+ .card{
+ 	margin-left: 2px;
+ 	margin-right: 2px;
+}
+}
+
 @media(max-width:767px){
 	.carousel-item a{
 		margin-bottom: 40px;
